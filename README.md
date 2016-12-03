@@ -7,5 +7,5 @@ As an experiment, I've been trying to convert `.travis.yml` to their equivalent 
 To sync a pipeline with concourse.ci deployment:
 
 ```
-fly set-pipeline -p nokogiri -c <(erb nokogiri.yml)
+fly set-pipeline -p nokogiri -c <(erb pipelines/nokogiri.yml)
 ```
