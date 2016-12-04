@@ -8,6 +8,7 @@ resources:
 jobs:
 <% %w(2.0 2.1 2.2.5 2.3.1).each do |version| %>
   - name: ruby <%= version %>
+    public: true
     serial: true
     serial_groups: [ "ruby" ]
     plan:
@@ -30,6 +31,7 @@ jobs:
 <% end %>
 <% %w(9.1 1.7).each do |version| %>
   - name: jruby <%= version %>
+    public: true
     serial: true
     serial_groups: [ "ruby" ]
     plan:
